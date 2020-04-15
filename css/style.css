@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway:300,400&display=swap');
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+}
+
+#bg-img {
+
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../images/homepage.jpg');
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+#nav {
+    height: 100vh;
+    width: 20%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    padding-top: 50px;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 0;
+}
+
+#nav ul {
+    list-style: none;
+    padding: 0px;
+}
+
+#nav li {
+    padding: 2vh 2vh;
+}
+
+#nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 3vh;
+
+}
+
+header {
+    text-align: center;
+    margin: 0px;
+    background-color: black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: 500;
+    font-size: 20px;
+
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 25px;
+    width: 100%;
+    font-weight: 100;
+
+}
+
+footer a {
+    text-align: center;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+/*Nav Bar*/
+.hamIcon {
+    display: block;
+    cursor: pointer;
+    position: fixed;
+    margin-left: 11px;
+    z-index: 1;
+    margin-top: -48px;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}

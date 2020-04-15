@@ -1,0 +1,55 @@
+p {
+    text-align: center;
+}
+
+input[type=text],
+select {
+    width: 50%;
+    padding: 12px;
+    border: 1px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    border: 3px solid black;
+}
+
+input[type=submit] {
+    background: none;
+    color: inherit;
+    border: 3px solid black;
+    padding: 12px 20px;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    font-weight: bold;
+}
+
+input[type=submit]:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.containerbox {
+    border: 5px solid black;
+    margin: 0 auto;
+    margin-bottom: 208px;
+    padding: 30px;
+    width: 50%;
+}
+
+#formwrap {
+    width: 100%;
+}
+
+#formwrap div {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#formwrap div input {
+    width: 100%;
+}
+
+#buttonWrap {
+
+    text-align: center;
+}

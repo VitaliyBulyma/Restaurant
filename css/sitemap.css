@@ -1,0 +1,42 @@
+/* * {
+    background-color: black;
+} */ 
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#list-grid-choice {
+    padding: 20px;
+}
+
+.btn-choice:hover {
+    background-color: #ddd;
+}
+
+.clickable-tab-title {
+    cursor: pointer;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.clickable-tab-title span {
+    float: right;
+    font-size: 45px;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-top: -13px;
+    margin-right: 13px;
+}
+
+.clickable-tab-content {
+    padding: 20px;
+}

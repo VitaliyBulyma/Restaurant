@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/menu.js"></script>
+    <script type="text/javascript" src="scripts/script.js"></script>
+
+    <title>Menu</title>
+</head>
+
+<body onload="document.getElementById('defaultOpen').click();">
+    <header>
+        <a href="index.html">
+            SS L'Ocean Restaurant
+        </a>
+    </header>
+    <div class="hamIcon" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    <div id="nav">
+        <ul>
+            <a href="menu.html">
+                <li>Menu</li>
+            </a>
+            <a href="specials.html">
+                <li>Specials</li>
+            </a>
+            <a href="Events.html">
+                <li>Events</li>
+            </a>
+            <a href="locations.html">
+                <li>Locations</li>
+            </a>
+            <a href="contest.html">
+                <li>Contest</li>
+            </a>
+            <a href="giftcards.html">
+                <li>Gift Cards</li>
+            </a>
+            <a href="contactus.html">
+                <li>Contact Us</li>
+            </a>
+            <a href="careers.html">
+                <li>Careers</li>
+            </a>
+            <a href="aboutus.html">
+                <li>About Us</li>
+            </a>
+            <a href="sitemap.html">
+                <li>Sitemap</li>
+            </a>
+
+        </ul>
+    </div>
+    <section id="menu">
+        <h1 class="menu-title">Menu</h1>
+        <section class="tabs-container">
+            <section class="tabs">
+                <button class="tabheader" onclick="openCourse(event, 'Appetizers')" id="defaultOpen">Appetizers</button>
+                <button class="tabheader" onclick="openCourse(event, 'MainCourse')">Main Course</button>
+                <button class="tabheader" onclick="openCourse(event, 'Drinks')">Drinks</button>
+                <button class="tabheader" onclick="openCourse(event, 'Desserts')">Desserts</button>
+                <button class="tabheader" onclick="openCourse(event, 'Sushi')">Sushi</button>
+            </section>
+
+            <!-- <div class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="hot-crab-dip" src="images/menu/hot-crab-dip.jpg">
+            </div> -->
+
+            <section class="tabsection" id="Appetizers">
+                <div class="food-item" name="food-item">
+                    <p>1. Hot Crab Dip
+                        <button class="view-dish"> View food </button>
+                        <span class="menu-price">&dollar; 10.00</span>
+                        <div class="foodImage">
+                            <img src="images/menu/hot-crab-dip.jpg" alt="hot crab dip">
+                        </div>
+                    </p>
+                </div>
+                <div class="food-item" name="food-item">
+                    <p>2. Fish Taco Bites
+                        <button class="view-dish"> View food </button>
+                        <span class="menu-price">&dollar; 8.65</span>
+                        <div class="foodImage">
+                            <img src="images/menu/fish-taco-bites.jpg" alt="hot crab dip">
+                        </div>
+                    </p>
+                </div>
+                <div class="food-item" name="food-item">
+                    <p>3. Shrimp Lover Squares
+                        <button class="view-dish"> View food </button>
+                        <span class="menu-price">&dollar; 12.80</span>
+                        <div class="foodImage">
+                            <img src="images/menu/shrimp-lover-squares.jpg" alt="hot crab dip">
+                        </div>
+                    </p>
+                </div>
+                <div class="food-item" name="food-item">
+                    <p>4. Shrimp Appetizer Spread
+                        <button class="view-dish"> View food </button>
+                        <span class="menu-price">&dollar; 12.85</span>
+                        <div class="foodImage">
+                            <img src="images/menu/shrimp-appetizer-spread .jpg" alt="hot crab dip">
+                        </div>
+                    </p>
+                </div>
+                <div class="food-item" name="food-item">
+                    <p>5. Chive Crab Cakes
+                        <button class="view-dish"> View food </button>
+                        <span class="menu-price">&dollar; 7.99</span>
+                        <div class="foodImage">
+                            <img src="images/menu/chive-crab-cakes .jpg" alt="hot crab dip">
+                        </div>
+                    </p>
+                </div>
+                <div class="food-item" name="food-item">
+                    <p>6. Crab Crescent Triangles
+                        <button class="view-dish"> View food </button>
+                        <span class="menu-price">&dollar; 7.99</span>
+                        <div class="foodImage">
+                            <img src="images/menu/crab-crescent-triangles.jpg" alt="hot crab dip">
+                        </div>
+                    </p>
+                </div>
+            </section>
+            <section class="tabsection hide-item" id="MainCourse">
+                <div class="food-item" name="food-item">
+                    <p>1. Grilled Tilapia with Mango Salsa
+                        <button class="view-dish"> View food </button>
+                        <span class="menu-price">&dollar; 26.30</span>
+                        <div class="foodImage">
+                            <img src="images/menu/Grilled-tilapia-with-mango-salsa.jpg" alt="hot crab dip">
+                        </div>
+                    </p>
+                </div>
+                <div class="food-item" name="food-item">
+                    <p>2. Baked Salmon Fillets Dijon
+                        <button class="view-dish"> View food </button>
+                        <span class="menu-price">&dollar; 32.10</span>
+                        <div class="foodImage">
+                            <img src="images/menu/Baked-salmon-fillets-dijon .jpg" alt="hot crab dip">
+                        </div>
+                    </p>
+                </div>
+                <div class="food-item" name="food-item">
+                    <p>3. Margarita Grilled Shrimp
+                        <button class="view-dish"> View food </button>
+                        <span class="menu-price">&dollar; 22.25</span>
+                        <div class="foodImage">
+                            <img src="images/menu/margarita-grilled-shrimp.jpg" alt="hot crab dip">
+                        </div>
+                    </p>
+                </div>
+                <div class="food-item" name="food-item">
+                    <p>4. Crispy Fish Filets
+                        <button class="view-dish"> View food </button>
+                        <span class="menu-price">&dollar; 23.50</span>
+                        <div class="foodImage">
+                            <img src="images/menu/crispy-fish-filets.jpg" alt="hot crab dip">
+                        </div>
+                    </p>
+                </div>
+                <div class="food-item" name="food-item">
+                    <p>5. Miso-Glazed Black Cod
+                        <button class="view-dish"> View food </button>
+                        <span class="menu-price">&dollar; 35.20</span>
+                        <div class="foodImage">
+                            <img src="images/menu/miso-glazed-black-cod.jpg" alt="hot crab dip">
+                        </div>
+                    </p>
+                </div>
+                <div class="food-item" name="food-item">
+                    <p>6. Broiled Lobster Tails
+                        <button class="view-dish"> View food </button>
+                        <span class="menu-price">&dollar; 21.65</span>
+                        <div class="foodImage">
+                            <img src="images/menu/broiled-lobster-tails.jpg" alt="hot crab dip">
+                        </div>
+                    </p>
+                </div>
+                <div class="food-item" name="food-item">
+                    <p>7. Cajun Seafood Pasta
+                        <button class="view-dish"> View food </button>
+                        <span class="menu-price">&dollar; 30.10</span>
+                        <div class="foodImage">
+                            <img src="images/menu/cajun-seafood-pasta.jpg" alt="hot crab dip">
+                        </div>
+                    </p>
+                </div>
+                <div class="food-item" name="food-item">
+                    <p>8. Shrimp Scampi
+                        <button class="view-dish"> View food </button>
+                        <span class="menu-price">&dollar; 25.70</span>
+                        <div class="foodImage">
+                            <img src="images/menu/shrimp-scampi.jpg" alt="hot crab dip">
+                        </div>
+                    </p>
+                </div>
+            </section>
+            <section class="tabsection hide-item" id="Drinks">
+                <div class="food-item" name="food-item">
+                    <p>1. Domestic Beer
+                        <button class="view-dish"> View food </button>
+                        <span class="menu-price">&dollar; 5.65</span>
+                        <div class="foodImage">
+                            <img src="images/menu/domestic-beer.jpg" alt="hot crab dip">
+                        </div>
+                    </p>
+                </div>
+
+                <div class="food-item" name="food-item">
+                    <p>2. Imported Beer
+                        <button class="view-dish"> View food </button>
+                        <span class="menu-price">&dollar; 5.65</span>
+                        <div class="foodImage">
+                            <img src="images/menu/imported-beer.jpg" alt="hot crab dip">
+                        </div>
+                    </p>
+                </div>
+                <div class="food-item" name="food-item">
+                    <p>3. Chardonnay
+                        <button class="view-dish"> View food </button>
+                        <span class="menu-price">&dollar; 8.75</span>
+                        <div class="foodImage">
+                            <img src="images/menu/chardonnay.jpg" alt="hot crab dip">
+                        </div>
+                    </p>
+                </div>
+                <div class="food-item" name="food-item">
+                    <p>4. Pinot Grigio
+                        <button class="view-dish"> View food </button>
+                        <span class="menu-price">&dollar; 8.75</span>
+                        <div class="foodImage">
+                            <img src="images/menu/pinot-grigio.png" alt="hot crab dip">
+                        </div>
+                    </p>
+                </div>
+                <div class="food-item" name="food-item">
+                    <p>5. Sauvignon Blanc
+                        <button class="view-dish"> View food </button>
+                        <span class="menu-price">&dollar; 8.75</span>
+                        <div class="foodImage">
+                            <img src="images/menu/sauvignon-blanc.png" alt="hot crab dip">
+                        </div>
+                    </p>
+                </div>
+                <div class="food-item" name="food-item">
+                    <p>6. Shiraz
+                        <button class="view-dish"> View food </button>
+                        <span class="menu-price">&dollar; 8.75</span>
+                        <div class="foodImage">
+                            <img src="images/menu/shiraz.png" alt="hot crab dip">
+                        </div>
+                    </p>
+                </div>
+                <div class="food-item" name="food-item">
+                    <p>7. Merlot
+                        <button class="view-dish"> View food </button>
+                        <span class="menu-price">&dollar; 8.75</span>
+                        <div class="foodImage">
+                            <img src="images/menu/merlot.png" alt="hot crab dip">
+                        </div>
+                    </p>
+                </div>
+                <div class="food-item" name="food-item">
+                    <p>8. Cabernet Merlot
+                        <button class="view-dish"> View food </button>
+                        <span class="menu-price">&dollar; 8.75</span>
+                        <div class="foodImage">
+                            <img src="images/menu/cabernet-merlot.jpg" alt="hot crab dip">
+                        </div>
+                    </p>
+                </div>
+                <div class="food-item" name="food-item">
+                    <p>9. Mineral Water
+                        <button class="view-dish"> View food </button>
+                        <span class="menu-price">&dollar; 2.95</span>
+                        <div class="foodImage">
+                            <img src="images/menu/mineral-water.jpg" alt="hot crab dip">
+                        </div>
+                    </p>
+                </div>
+
+            </section>
+
+            <section class="tabsection hide-item" id="Desserts">
+                <div class="food-item" name="food-item">
+                    <p>1. Sorbet
+                        <button class="view-dish"> View food </button>
+                        <span class="menu-price">&dollar; 8.75</span>
+                        <div class="foodImage">
+                            <img src="images/menu/sorbet.jpg" alt="hot crab dip">
+                        </div>
+                    </p>
+                </div>
+                <div class="food-item" name="food-item">
+                    <p>2. Shaved Ice
+                        <button class="view-dish"> View food </button>
+                        <span class="menu-price">&dollar; 8.75</span>
+                        <div class="foodImage">
+                            <img src="images/menu/shaved-ice.jpg" alt="hot crab dip">
+                        </div>
+                    </p>
+                </div>
+                <div class="food-item" name="food-item">
+                    <p>3. Fresh Fruit
+                        <button class="view-dish"> View food </button>
+                        <span class="menu-price">&dollar; 5.40</span>
+                        <div class="foodImage">
+                            <img src="images/menu/fresh-fruit.jpg" alt="hot crab dip">
+                        </div>
+                    </p>
+                </div>
+                <div class="food-item" name="food-item">
+                    <p>4. Fruit Tarts
+                        <button class="view-dish"> View food </button>
+                        <span class="menu-price">&dollar; 3.25</span>
+                        <div class="foodImage">
+                            <img src="images/menu/fruit-tarts.jpg" alt="hot crab dip">
+                        </div>
+                    </p>
+                </div>
+                <div class="food-item" name="food-item">
+                    <p>5. Gelatin Desserts
+                        <button class="view-dish"> View food </button>
+                        <span class="menu-price">&dollar; 5.75</span>
+                        <div class="foodImage">
+                            <img src="images/menu/gelatin-desserts.jpg" alt="hot crab dip">
+                        </div>
+                    </p>
+                </div>
+                <div class="food-item" name="food-item">
+                    <p>6. Panna Cotta
+                        <button class="view-dish"> View food </button>
+                        <span class="menu-price">&dollar; 9.25</span>
+                        <div class="foodImage">
+                            <img src="images/menu/panna-cotta.jpg" alt="hot crab dip">
+                        </div>
+                    </p>
+                </div>
+            </section>
+
+            <section class="tabsection hide-item" id="Sushi">
+                <div class="food-item" name="food-item">
+                    <p>1. Shrimp Tempura
+                        <button class="view-dish"> View food </button>
+                        <span class="menu-price">&dollar; 5.99</span>
+                        <div class="foodImage">
+                            <img src="images/menu/shrimp-tempura.jpg" alt="hot crab dip">
+                        </div>
+                    </p>
+                </div>
+                <div class="food-item" name="food-item">
+                    <p>2. Shrimp & Crab Tempura
+                        <button class="view-dish"> View food </button>
+                        <span class="menu-price">&dollar; 5.99</span>
+                        <div class="foodImage">
+                            <img src="images/menu/shrimp-crab-tempura.jpg" alt="hot crab dip">
+                        </div>
+                    </p>
+                </div>
+                <div class="food-item" name="food-item">
+                    <p>3. Shrimp & Yam Tampura
+                        <button class="view-dish"> View food </button>
+                        <span class="menu-price">&dollar; 5.99</span>
+                        <div class="foodImage">
+                            <img src="images/menu/shrimp-yam.jpg" alt="hot crab dip">
+                        </div>
+                    </p>
+                </div>
+                <div class="food-item" name="food-item">
+                    <p>4. Salmon Sashimi
+                        <button class="view-dish"> View food </button>
+                        <span class="menu-price">&dollar; 11.99</span>
+                        <div class="foodImage">
+                            <img src="images/menu/salmon-sashimi.jpg" alt="hot crab dip">
+                        </div>
+                    </p>
+                </div>
+                <div class="food-item" name="food-item">
+                    <p>5. Spicy Salmon Sashimi
+                        <button class="view-dish"> View food </button>
+                        <span class="menu-price">&dollar; 11.99</span>
+                        <div class="foodImage">
+                            <img src="images/menu/spicy-salmon-sashimi.jpg" alt="hot crab dip">
+                        </div>
+                    </p>
+                </div>
+                <div class="food-item" name="food-item">
+                    <p>6. Assorted Sashimi
+                        <button class="view-dish"> View food </button>
+                        <span class="menu-price">&dollar; 17.99</span>
+                        <div class="foodImage">
+                            <img src="images/menu/assorted-sashimi.jpg" alt="hot crab dip">
+                        </div>
+                    </p>
+                </div>
+            </section>
+        </section>
+    </section>
+    <footer>
+        <a href="index.html">
+            L'OCEAN RESTARAUNT 2019. ALL RIGHTS RESERVED
+        </a>
+    </footer>
+</body>
+
+</html>

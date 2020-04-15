@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="css/locations.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 
+  <title>Locations</title>
+</head>
+
+<body>
+  <header id="header">
+    <a href="index.html">
+      SS L'Ocean Restaurant
+    </a>
+  </header>
+  <div class="hamIcon" onclick="myFunction(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+
+  <div id="nav">
+    <ul>
+            <a href="menu.html">
+                <li>Menu</li>
+            </a>
+            <a href="specials.html">
+                <li>Specials</li>
+            </a>
+            <a href="Events.html">
+                <li>Events</li>
+            </a>
+            <a href="locations.html">
+                <li>Locations</li>
+            </a>
+            <a href="contest.html">
+                <li>Contest</li>
+            </a>
+            <a href="giftcards.html">
+                <li>Gift Cards</li>
+            </a>
+            <a href="contactus.html">
+                <li>Contact Us</li>
+            </a>
+            <a href="careers.html">
+                <li>Careers</li>
+            </a>
+            <a href="aboutus.html">
+                <li>About Us</li>
+            </a>
+            <a href="sitemap.html">
+                <li>Sitemap</li>
+            </a>
+
+        </ul>
+  </div>
+  <div id="welcome_prompt">
+    <h1>Select the location</h1>
+    <form>
+      <select id="myList" onchange="myLocationFunction()">
+
+        <option value="0"></option>
+        <option value="Maur">North Atlantic</option>
+        <option value="Hawa">South Pacific</option>
+
+      </select>
+
+      <p id="locationSelected">Your selection is: <span id="demo"></span></p>
+
+    </form>
+
+  </div>
+
+  <div id="address_1">
+    <p>
+      For more than 20 years SS L'Ocean North Atlantic has been bringing people together over great food.
+     
+      24 hours a day. 365 days a year.
+      Here, you can order the usual or try something new — like our cath yourself your own lobster featuring crisp air
+      captured from North Pole in your scuba air tank.
+      See you at SS L'Ocean!     
+
+    </p>
+    <a href="https://goo.gl/maps/ubY92Y4Yb8hX1Rm26">
+      <img id="loc1" src="images/locations/NorthAtlanticLocation1.jpg" alt="Show on the World map" target="_blank" /> </a>
+  </div>
+  <div id="address_2">
+    <p>
+      Located only seven hours away from the shore, SS L'Ocean South Pacific specializes in the freshest fish and
+      seafood prepared with
+      Caribbean flair, and features a wonderful oyster and
+      ceviche bar in front of the open kitchen. In 2003, SS L'Ocean was
+      named one of the 75 best new restaurants in the world by "Obviously The Best" magazine. </p>
+    <a href="https://goo.gl/maps/Pg1EzdWve6LSZhJr9">
+      <img id="loc2" src="images/locations/SouthPacificLocation2.jpg" alt="Show on the World map" target="_blank" /> </a>
+  </div>
+  <footer id="footer">
+    <a href="index.html">
+      L'OCEAN RESTARAUNT 2019. ALL RIGHTS RESERVED
+    </a>
+  </footer>
+  <script src="scripts/locations.js"></script>
+ <script src="scripts/script.js"></script>
+
+</body>
+
+</html>

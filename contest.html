@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--global css-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/conteststyle.css">
+    <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
+    <script src="scripts/script.js"></script>
+    <!--global js for header-->
+</head>
+
+<body onkeydown="startMove(event);" onkeyup="endMove(event)">
+    <header id="header">
+        <a href="index.html">
+            SS L'Ocean Restaurant
+        </a>
+    </header>
+
+    <div class="hamIcon" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+
+    <div id="nav">
+        <ul>
+            <a href="menu.html">
+                <li>Menu</li>
+            </a>
+            <a href="specials.html">
+                <li>Specials</li>
+            </a>
+            <a href="Events.html">
+                <li>Events</li>
+            </a>
+            <a href="locations.html">
+                <li>Locations</li>
+            </a>
+            <a href="contest.html">
+                <li>Contest</li>
+            </a>
+            <a href="giftcards.html">
+                <li>Gift Cards</li>
+            </a>
+            <a href="contactus.html">
+                <li>Contact Us</li>
+            </a>
+            <a href="careers.html">
+                <li>Careers</li>
+            </a>
+            <a href="aboutus.html">
+                <li>About Us</li>
+            </a>
+            <a href="sitemap.html">
+                <li>Sitemap</li>
+            </a>
+
+        </ul>
+    </div>
+    <main id="content-wrapper">
+        <h1>Contest</h1>
+        <canvas id="gameCanvas" width="800" height="600" style="border:1px solid #000000;"></canvas>
+    </main>
+
+    <script src="scripts/contestscript.js"></script>
+    <footer id="footer">
+        <a href="index.html">
+            L'OCEAN RESTARAUNT 2019. ALL RIGHTS RESERVED
+        </a>
+    </footer>
+
+</body>
+
+</html>

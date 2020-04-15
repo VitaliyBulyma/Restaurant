@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/giftcards.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="scripts/script.js"></script>
+</head>
+<title>Gift Cards</title>
+</head>
+<body>
+  <header id="header">
+    <a href="index.html">
+      SS L'Ocean Restaurant
+    </a>
+  </header>
+  <div class="hamIcon" onclick="myFunction(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+
+  <div id="nav">
+    <ul>
+            <a href="menu.html">
+                <li>Menu</li>
+            </a>
+            <a href="specials.html">
+                <li>Specials</li>
+            </a>
+            <a href="Events.html">
+                <li>Events</li>
+            </a>
+            <a href="locations.html">
+                <li>Locations</li>
+            </a>
+            <a href="contest.html">
+                <li>Contest</li>
+            </a>
+            <a href="giftcards.html">
+                <li>Gift Cards</li>
+            </a>
+            <a href="contactus.html">
+                <li>Contact Us</li>
+            </a>
+            <a href="careers.html">
+                <li>Careers</li>
+            </a>
+            <a href="aboutus.html">
+                <li>About Us</li>
+            </a>
+            <a href="sitemap.html">
+                <li>Sitemap</li>
+            </a>
+
+        </ul>
+  </div>
+<div style="text-align:center">
+  <h1>Gift Card Tool</h1>
+  <h2>Click on the image below to personalize your gift card:</h2>
+</div>
+<div class="choice">
+
+<h3 id="giftCardModifier1">Select the Amount</h3>
+
+    <select id="myListAmount" onchange="cardAmount()">
+
+      <option value="0"></option>
+      <option value="25">$25</option>
+      <option value="50">$50</option>
+      <option value="100">$100</option>
+
+    </select>
+
+
+  <h3 id="giftCardModifier2">Select the Message</h3>
+
+      <select id="myListMessages" onchange="cardMessage()">
+
+        <option value="0"></option>
+        <option value="bday">Happy Birthday</option>
+        <option value="aniversary">Happy Aniversary</option>
+        <option value="celebrate">Celebrate</option>
+
+      </select>
+
+
+  </div>
+<!--The four column-->
+
+<div class="row">
+  <div class="column">
+    <img src="images/giftcards/giftcard1.jpg" alt="Zen Garden" style="width:100%" onclick="myCardFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/giftcards/giftcard2.jpg" alt="English Garden" style="width:100%" onclick="myCardFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/giftcards/giftcard3.jpg" alt="Beach" style="width:100%" onclick="myCardFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/giftcards/giftcard4.jpg" alt="Mountains" style="width:100%" onclick="myCardFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+
+  <p id="amount"> <span id="demo"></span></p>
+  <div id="imgtext"></div>
+</div>
+
+<footer id="footer">
+  <a href="index.html">
+    L'OCEAN RESTARAUNT 2019. ALL RIGHTS RESERVED
+  </a>
+</footer>
+<script src="scripts/giftcards.js"></script>
+</body>
+</html>
+
+<!--code adapted in-part from https://www.w3schools.com/howto/howto_js_tab_img_gallery.asp
+-->

@@ -1,0 +1,41 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+p{
+    text-align: center;
+}
+.careerCard {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    flex-wrap: wrap;
+    min-width: 0;
+    min-height: 0;
+    border: 1px solid;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+}
+.postionName{
+    padding: 5px;
+    font-size: 1.4em;
+    flex-basis: 250px;
+}
+.postionDepartment{
+    padding: 5px;
+    flex-basis: 600px;
+}
+.positionDiscription{
+    padding: 5px;
+    flex-basis: 1000px;
+}
+
+#container {
+
+    margin: 0 auto;
+    max-width: 30%;
+
+}

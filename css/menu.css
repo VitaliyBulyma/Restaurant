@@ -1,0 +1,140 @@
+#menu {
+    /* background: black; */
+}
+
+html {
+    background-image: none;
+    background-color: black;
+}
+
+body {
+    background-image: none;
+    background-color: white;
+}
+
+
+.menu-title {
+    text-align: center;
+}
+
+.tabs-container {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 20px;
+    color: black;
+    
+}
+
+.tabheader {
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 6px 12px;
+    font-size: 1em;
+    cursor: pointer;
+    color: black;
+}
+
+.tabs button.active {
+    border: 1px solid !important;
+    border-bottom: none !important;
+}
+
+.tabsection {
+    border: 1px solid black;
+    padding: 15px;  
+}
+
+.hide-item {
+    display: none;
+}
+
+.menu-price {
+    float: right;
+}
+
+.view-dish {
+    border-radius: 5px;
+    background-color: grey;
+    margin-left: 5px;
+    color: black;
+}
+
+.foodImage {
+    width: 30%;
+}
+
+.foodImage img {
+    height: 100%;
+    width: 100%
+}
+
+.tabsection p img{
+    width:100%;
+    max-width:300px;
+}
+
+.tabsection p button {
+    cursor: pointer;
+}
+
+/* I was attempting to do a modal image (In-page image pop-up) but failed. Sorry */
+
+/* .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(56, 54, 54);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.image-caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+.modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+} */
+

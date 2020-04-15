@@ -1,0 +1,142 @@
+/* REFERENCE: W3 Schools Javascript slideshow */
+
+* {
+    box-sizing: border-box
+}
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+    align-items: center;
+    /*will switch to flex display when showing*/
+}
+
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 45px;
+    user-select: none;
+}
+
+
+.next {
+    right: 0;
+}
+
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.prev:active, .next:active {
+    animation: shake 0.5s;
+}
+/*REFERENCE: W3 Schools shake image*/
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+.text-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Textbox */
+
+.text {
+    color: #f2f2f2;
+    font-size: 40px;
+    padding: 8px 8px;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+  justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.text h2 {
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.text p {
+    font-size: 20px;
+    padding: 8px 12px;
+}
+
+
+
+/* Fading animation */
+
+.blur {
+    -webkit-animation-name: blur;
+    -webkit-animation-duration: 0.25s;
+    animation-name: blur;
+    animation-duration: 0.25s;
+}
+
+@-webkit-keyframes blur {
+    from {
+        filter: blur(0.5rem);
+    }
+    to {
+        filter: blur(0);
+    }
+}
+
+@keyframes blur {
+    from {
+        filter: blur(0.5rem);
+    }
+    to {
+        filter: blur(0);
+    }
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+#content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h2 {
+    color: white;
+}
+
+.description {
+    color: black;
+}
